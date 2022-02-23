@@ -18,14 +18,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-   <link rel="preload" href="style.css">
+  <link rel="preload" href="style.css">
   <link rel="preload" href="media/Pattern.mp4">
 </head>
 
 
 
-<body>
+<body class="hidden">
+  <div class="loader-centrado" id="onload">
+    <div class="lds-ripple">
+      <div>
+      </div>
+      <div>     
+      </div>
+    </div>
+  </div>
 
+<div class="body">
   <div class="video">
     <video autoplay muted loop>
       <source src="media/Pattern.mp4">
@@ -62,5 +71,8 @@
      <p>Desarrollado por <strong><a href="">ELDEV</a></strong></p>
    </footer>
 
-
+</div>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="codigo.js"></script>
 </body>
