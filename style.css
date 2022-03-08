@@ -208,6 +208,9 @@ color: black;
   padding-right: 150px;
   filter: blur(0.1px);
 }
+  .btn:hover{
+  transform: scale(1) translateX(0px);
+}
 }
 
 footer{
